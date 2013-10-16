@@ -1,13 +1,13 @@
 line_width = 50
 title = "Table of Contents"
-chapter_num = [1,2,3]
-chapter_name = ['Getting Started','Numbers','Letters']
-chapter_page = [1,9,13]
+chapters = [['Getting Started',1],['Numbers',9],['Letters',13]]
 
 puts title.center(line_width)
 puts
-chapter_num.each do |num|
-  chapter = "Chapter #{num}: #{chapter_name[num - 1]}"
-  page_chapter = "page #{chapter_page[num - 1]}"
-  puts chapter.ljust(line_width - page_chapter.length) + page_chapter.rjust(page_chapter.length)
+chapter_num = 1
+chapters.each do |chap|
+  chapter_name = "Chapter #{chapter_num}: #{chap[0]}"
+  chapter_page = "page #{chap[1]}"
+  puts chapter_name.ljust(line_width - chapter_page.length) + chapter_page.rjust(chapter_page.length)
+  chapter_num += 1
 end
