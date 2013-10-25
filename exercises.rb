@@ -32,10 +32,11 @@ puts array.uniq
 puts "\n7. What's the major difference between an Array and a Hash?"
 puts "Hash is similar to an Array, except that indexing is done via arbitrary keys of any object type, not an integer index."
 
-puts "\n8. Create a Hash using both Ruby 1.8 and 1.9 syntax. Suppose you have a h = {a:1, b:2, c:3, d:4}"
+puts "\n8. Create a Hash using both Ruby 1.8 and 1.9 syntax."
 h = Hash["a"=>1, "b"=>2, "c"=>3, "d"=>4]
 puts h
 
+puts "\nSuppose you have a h = {a:1, b:2, c:3, d:4}"
 puts "\n9. Get the value of key \"b\"."
 puts h["b"]
 
