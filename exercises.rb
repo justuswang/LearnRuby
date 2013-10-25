@@ -52,6 +52,9 @@ puts "\n14. Can hash values be arrays? Can you have an array of hashes? (give ex
 puts "Yes, hash values can be arrays. e.g."
 h["array"] = [1,2,3,4,5]
 puts h
+puts "We can have an array of hashes. e.g."
+array = [{a: [1,2]},{},{},{a: "test"},{}]
+puts array
 
 puts "\n15. Look at several Rails/Ruby online API sources and say which one your like best and why."
 puts "I like http://www.ruby-doc.org and http://api.rubyonrails.org because they are official and easy to search."
